@@ -1,0 +1,21 @@
+<head>
+        
+    <title>{{config('app.name') . ': ' .$title ?? config('app.name')}}</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="{{config('app.name')}}" />
+	<meta name="keyword" content="{{$keyword ?? config('app.name')}}" />
+
+    <!-- Layout config Js -->
+    <script src="{{asset('assets/js/layout.js')}}"></script>
+    <!-- Bootstrap Css -->
+    <link href="{{asset('assets/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="{{asset('assets/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="{{asset('assets/css/app.min.css')}}" rel="stylesheet" type="text/css" />
+    <!-- custom Css-->
+    <link href="{{asset('assets/css/custom.min.css')}}" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="{{asset('css/sweetalert.css')}}" type="text/css" />
+	<link rel="stylesheet" href="{{asset('css/toastr.css')}}" type="text/css" />
+</head>
